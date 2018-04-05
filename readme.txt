@@ -15,6 +15,24 @@ output: colorchecker_thresh.raw
 6) Error diffusion performed using 3 methods on 
 input: colorchecker.raw
 output: colorchecker_error_diffusion.raw
+7) Panoramic Stitching of three input images to get a obtain one stiched panoramic image.
+input: left.raw
+		middle.raw
+		right.raw
+output: stitching.raw
+8) Identify identical pieces in an image
+input: board.raw
+output: board_rectangle.raw
+9) Applying sobel edge detection
+input: Boat.raw
+output: boat_ext.raw
+10) Square image to circle geometric transform and reversed
+input: panda.raw
+output: panda_circle.raw
+		panda_square.raw
+11) Texture classification
+input: comb.raw
+output: Extended_composite.raw
 
 No external libraries like OpenCV or Matlab are used to implement these operations.
 
@@ -50,6 +68,22 @@ cd bin/
 
 6. For error diffusion:
 	Usage: ./error_diffusion 
+
+7. Panoramic stitching
+	Usage: ./Panoramic_stitching
+
+8) Identify unique pieces 
+	Usage: ./puzzle
+
+9) Sobel Edge detection:
+	Usage: ./sobel
+
+10) Geometric mapping:
+	Usage: ./square_to_circle
+
+11) Texture Classification:
+	Usage: ./texture
+
 
 
 information of the input images:

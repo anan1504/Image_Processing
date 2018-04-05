@@ -7,8 +7,8 @@
 
 using namespace std;
 
-#ifndef _FileIO_H
-#define _FileIO_H
+#ifndef _FileIOs_H
+#define _FileIOs_H
 
 
 //Acess file to read the image
